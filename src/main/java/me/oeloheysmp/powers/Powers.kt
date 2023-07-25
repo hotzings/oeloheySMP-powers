@@ -10,8 +10,9 @@ class Powers : JavaPlugin() {
         instance = this
         print("Powers plugin booting up")
 
+        Bukkit.getScheduler().scheduleSyncRepeatingTask(instance, goldenPaw(), 0 ,20)
+
         // Schedule a repeating task to run every 20 ticks (1 second)
-        Bukkit.getServer().getScheduler().scheduleSyncRepeatingTask(this, ::goldenPaw, 0, 20)
 
         print("powers plugin loaded")
     }
