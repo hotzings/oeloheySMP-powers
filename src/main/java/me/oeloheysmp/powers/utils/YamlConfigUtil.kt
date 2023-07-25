@@ -1,6 +1,5 @@
 package me.oelohey.minicreates.utils
 
-import me.oelohey.harvesterhoes.HarvesterHoes
 import me.oeloheysmp.powers.Powers
 import org.bukkit.Bukkit
 import org.bukkit.configuration.ConfigurationSection
