@@ -3,7 +3,7 @@ package me.oeloheysmp.powers.utils
 import org.bukkit.entity.Player
 import org.bukkit.inventory.Inventory
 
-object checkPlayerItems {
+object CheckPlayerItems {
     @JvmStatic
     fun hasCustomItem(player: Player, Id: String): Boolean { // Checks if the player has the item in there inventory
         val inv: Inventory = player.inventory // get the players inventory

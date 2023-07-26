@@ -1,7 +1,6 @@
-package me.oeloheysmp.powers.powers.goldenPaw
+package me.oeloheysmp.powers.powers
 
-import me.oeloheysmp.powers.Powers
-import me.oeloheysmp.powers.utils.checkPlayerItems.hasCustomItem
+import me.oeloheysmp.powers.utils.CheckPlayerItems.hasCustomItem
 import org.bukkit.Bukkit
 import org.bukkit.attribute.Attribute
 import org.bukkit.attribute.AttributeModifier
@@ -15,7 +14,7 @@ Currently untested
 using id "golden_paw"
 uuid for attribute: "b4e53dc2-f228-406a-9f96-e29283f94032"
 */
-class goldenPaw() : BukkitRunnable() {
+class GoldenPaw() : BukkitRunnable() {
     override fun run() {
         for (player in Bukkit.getOnlinePlayers()) {
             player.sendMessage("test")

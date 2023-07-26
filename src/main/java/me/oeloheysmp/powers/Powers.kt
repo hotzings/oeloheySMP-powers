@@ -1,5 +1,6 @@
 package me.oeloheysmp.powers
 
+import me.oeloheysmp.powers.powers.GoldenPaw
 import me.oeloheysmp.powers.powers.WindMedallion
 import me.oeloheysmp.powers.utils.ConfigUtil
 import org.bukkit.Bukkit
@@ -15,7 +16,7 @@ class Powers : JavaPlugin() {
         Bukkit.getPluginManager().registerEvents(WindMedallion(), this)
 
 
-        Bukkit.getScheduler().scheduleSyncRepeatingTask(instance, goldenPaw(), 0 ,20)
+        Bukkit.getScheduler().scheduleSyncRepeatingTask(instance, GoldenPaw(), 0 ,20)
     }
 
     override fun onDisable() {
