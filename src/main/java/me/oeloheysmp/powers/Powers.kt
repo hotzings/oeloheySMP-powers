@@ -12,9 +12,10 @@ class Powers : JavaPlugin() {
 
         ConfigUtil.init()
 
-
         Bukkit.getPluginManager().registerEvents(WindMedallion(), this)
 
+
+        Bukkit.getScheduler().scheduleSyncRepeatingTask(instance, goldenPaw(), 0 ,20)
     }
 
     override fun onDisable() {
@@ -23,7 +24,7 @@ class Powers : JavaPlugin() {
 
     companion object{
         lateinit var instance : Powers
-        var Cooldowns : HashMap<String, Int> = HashMap()
 
+        var Cooldowns : HashMap<String, Int> = HashMap()
     }
 }
