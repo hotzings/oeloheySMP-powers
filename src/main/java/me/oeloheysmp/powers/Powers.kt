@@ -1,5 +1,6 @@
 package me.oeloheysmp.powers
 
+import me.oeloheysmp.powers.Commands.Quack
 import me.oeloheysmp.powers.powers.GoldenPaw
 import me.oeloheysmp.powers.powers.WindMedallion
 import me.oeloheysmp.powers.utils.ConfigUtil
@@ -13,9 +14,13 @@ class Powers : JavaPlugin() {
 
         ConfigUtil.init()
 
+        // Powers
         Bukkit.getPluginManager().registerEvents(WindMedallion(), this)
 
         Bukkit.getScheduler().scheduleSyncRepeatingTask(instance, GoldenPaw(), 0 ,20)
+
+        // Commands
+        getCommand("quack")?.setExecutor(Quack)
     }
 
     override fun onDisable() {

@@ -3,3 +3,6 @@ version: '${project.version}'
 main: me.oeloheysmp.powers.Powers
 api-version: 1.19
 authors: [ oelohey, Hotzings, wintyy ]
+
+command:
+  quack:
