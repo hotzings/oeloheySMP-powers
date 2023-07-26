@@ -1,6 +1,8 @@
 package me.oeloheysmp.powers
 
-import me.oeloheysmp.powers.powers.goldenPaw.goldenPaw
+import me.oeloheysmp.powers.powers.WindMedallion
+import me.oeloheysmp.powers.utils.ConfigUtil
+import org.bukkit.Bukkit
 import org.bukkit.plugin.java.JavaPlugin
 
 class Powers : JavaPlugin() {
@@ -8,8 +10,11 @@ class Powers : JavaPlugin() {
     override fun onEnable() {
         instance = this
 
-        // Schedule a repeating task to run every 20 ticks (1 second)
-        server.scheduler.runTaskTimer(this, ::goldenPaw, 0, 20)
+        ConfigUtil.init()
+
+
+        Bukkit.getPluginManager().registerEvents(WindMedallion(), this)
+
     }
 
     override fun onDisable() {
@@ -18,5 +23,7 @@ class Powers : JavaPlugin() {
 
     companion object{
         lateinit var instance : Powers
+        var Cooldowns : HashMap<String, Int> = HashMap()
+
     }
 }
