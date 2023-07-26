@@ -17,7 +17,7 @@ class Powers : JavaPlugin() {
         // Powers
         Bukkit.getPluginManager().registerEvents(WindMedallion(), this)
 
-        Bukkit.getScheduler().scheduleSyncRepeatingTask(instance, GoldenPaw(), 0 ,20)
+        //Bukkit.getScheduler().scheduleSyncRepeatingTask(instance, GoldenPaw(), 0 ,20) // oelohey please fix
 
         // Commands
         getCommand("quack")?.setExecutor(Quack)

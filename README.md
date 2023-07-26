@@ -1,7 +1,3 @@
-# hello world
-# this is the read me file
-# somone should like put things here probly
-# just a suggestion
-# anyway i added the code in my old plugin back
-# not sure what to do next since i dont have a test server but yea
-# uh cya tomorrow ig
+# Oelohey smp powers plugin
+
+a plugin for adding powers and random shit to the oelohey smp that will be deleted within 2 weeks of now
