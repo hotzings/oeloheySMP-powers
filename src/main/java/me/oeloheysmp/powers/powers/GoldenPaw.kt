@@ -42,6 +42,11 @@ class GoldenPaw(){
                 assert(speedAttribute != null)
                 speedAttribute!!.addModifier(SpeedModifier)
                 DamageAttribute!!.addModifier(DamageModifier)
+
+                // Leap ability
+                if (player.isSneaking){
+                    player.addPotionEffect(PotionEffect(PotionEffectType.JUMP, 2, 3, false, false))
+                }
             } else {
                 // Remove attributes
                 assert(speedAttribute != null)
