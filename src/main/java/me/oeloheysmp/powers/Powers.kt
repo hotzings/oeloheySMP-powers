@@ -15,7 +15,6 @@ class Powers : JavaPlugin() {
 
         Bukkit.getPluginManager().registerEvents(WindMedallion(), this)
 
-
         Bukkit.getScheduler().scheduleSyncRepeatingTask(instance, GoldenPaw(), 0 ,20)
     }
 
