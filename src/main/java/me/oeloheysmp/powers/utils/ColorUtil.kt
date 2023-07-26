@@ -3,7 +3,7 @@ package me.oelohey.minicreates.utils
 import net.md_5.bungee.api.ChatColor
 import java.util.regex.Pattern
 
-class colorUtil {
+class ColorUtil {
 
     companion object {
         private val pattern = Pattern.compile("#[a-fA-f0-8]{6}")

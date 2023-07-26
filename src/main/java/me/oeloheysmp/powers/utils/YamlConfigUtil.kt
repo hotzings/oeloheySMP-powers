@@ -8,7 +8,7 @@ import org.bukkit.configuration.file.YamlConfiguration
 import java.io.File
 import java.io.IOException
 
-class yamlConfigUtil(private val file: String) : YamlConfiguration() {
+class YamlConfigUtil(private val file: String) : YamlConfiguration() {
     private var jfile: File? = null
 
     init {
@@ -20,9 +20,9 @@ class yamlConfigUtil(private val file: String) : YamlConfiguration() {
         try {
             this.load(jfile!!)
         } catch (x: InvalidConfigurationException){
-            Bukkit.getConsoleSender().sendMessage(colorUtil.CC("&4Error while loading ") + file + ":" + x.message + "Caused By: " + x.cause)
+            Bukkit.getConsoleSender().sendMessage(ColorUtil.CC("&4Error while loading ") + file + ":" + x.message + "Caused By: " + x.cause)
         }catch (x: IOException){
-            Bukkit.getConsoleSender().sendMessage(colorUtil.CC("&4Error while loading ") + file + ":" + x.message + "Caused By: " + x.cause)
+            Bukkit.getConsoleSender().sendMessage(ColorUtil.CC("&4Error while loading ") + file + ":" + x.message + "Caused By: " + x.cause)
         }
     }
 
@@ -30,7 +30,7 @@ class yamlConfigUtil(private val file: String) : YamlConfiguration() {
         try {
             this.save(jfile!!)
         } catch (x: IOException){
-            Bukkit.getConsoleSender().sendMessage(colorUtil.CC("&4Error while loading ") + file + ":" + x.message + "Caused By: " + x.cause)
+            Bukkit.getConsoleSender().sendMessage(ColorUtil.CC("&4Error while loading ") + file + ":" + x.message + "Caused By: " + x.cause)
         }
     }
 

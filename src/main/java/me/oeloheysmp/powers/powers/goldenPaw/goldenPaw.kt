@@ -1,7 +1,6 @@
 package me.oeloheysmp.powers.powers.goldenPaw
 
-import me.oeloheysmp.powers.Powers
-import me.oeloheysmp.powers.utils.checkPlayerItems.hasCustomItem
+import me.oeloheysmp.powers.utils.CheckPlayerItems.hasCustomItem
 import org.bukkit.Bukkit
 import org.bukkit.attribute.Attribute
 import org.bukkit.attribute.AttributeModifier

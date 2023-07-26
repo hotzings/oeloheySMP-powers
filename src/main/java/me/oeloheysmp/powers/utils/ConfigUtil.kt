@@ -3,7 +3,7 @@ package me.oelohey.minicreates.utils
 
 import org.bukkit.configuration.file.FileConfiguration
 
-class configUtil {
+class ConfigUtil {
 
     companion object{
         var configuration: FileConfiguration? = null
@@ -13,7 +13,7 @@ class configUtil {
         }
 
         fun init(){
-            configuration = yamlConfigUtil("config.yml")
+            configuration = YamlConfigUtil("config.yml")
         }
     }
 }
